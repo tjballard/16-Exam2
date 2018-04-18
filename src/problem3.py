@@ -28,7 +28,8 @@ def main():
 
     # Test get_age:
     p1 = Person(9)
-    print(p1.get_age())  # Should print 9
+    print(p1.get_age())# Should print 9
+    print(p1.celebrate_birthdays(5))
 
     # -------------------------------------------------------------------------
     # WRITE MORE CODE HERE AS NEEDED to TEST the code that you write
@@ -44,31 +45,45 @@ class Person(object):
         What comes in:  The Person's age.
         Side effects: Sets instance variables as needed by the other methods.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+        self.age = age
 
     def get_age(self):
         """ Returns this Person's age. """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+        return self.age
 
     def celebrate_birthday(self):
         """
         Increments this Person's age.
         ALso prints 'Happy birthday!'.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+        return self.age + 1
 
     def celebrate_birthdays(self, n):
         """
         What comes in: A non-negative integer n.
         Side effects:  Calls the  celebrate_birthday  method  n  times.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+        for k in range(n):
+            x = [self.celebrate_birthday()+k]
+        return x
+
+
+
+
+
 
     def older_person(self):
         """
         Returns a new Person whose age is twice this Person's age.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+        self.age = self.age * 2
+        return self.age
+
 
 
 # -----------------------------------------------------------------------------
