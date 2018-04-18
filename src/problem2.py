@@ -158,15 +158,14 @@ def problem2(n, seq):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     count = 0
-    p = 0
+    p = []
     for k in range(len(seq)):
         if seq[k] < n:
-            p = p + seq[k]
+            p += [seq[k]]
             count = count + 1
-    if count > 3:
-        return p
-    else:
-        return 'Too few'
+            if count >= 3:
+                return p
+    return 'Too few'
 
 
 ###############################################################################

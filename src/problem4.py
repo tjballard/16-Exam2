@@ -153,7 +153,7 @@ def problem4a(strings):
       :type [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     for k in range(len(strings)):
