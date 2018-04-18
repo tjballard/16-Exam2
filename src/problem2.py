@@ -163,7 +163,6 @@ def problem2(n, seq):
         if seq[k] < n:
             p = p + seq[k]
             count = count + 1
-            print('hi')
     if count > 3:
         return p
     else:

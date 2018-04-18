@@ -19,7 +19,7 @@ def main():
     print(' to run the testing code as you complete the TODOs.')
 
     # run_test_problem4a()
-    # run_test_problem4b()
+    run_test_problem4b()
 
 
 ###############################################################################
@@ -156,6 +156,11 @@ def problem4a(strings):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    for k in range(len(strings)):
+        if is_prime(len(strings[k])) == True:
+            return strings[k]
+        else:
+            return -1
 
 
 def run_test_problem4b():
@@ -254,6 +259,12 @@ def problem4b(list_of_tuples_of_strings):
     #    *** IMPORTANT:  THIS PROBLEM COUNTS ONLY 2 POINTS
     #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
     # -------------------------------------------------------------------------
+    for k in range(len(list_of_tuples_of_strings)):
+        if is_prime(len(list_of_tuples_of_strings[k])) == True:
+            return True
+        else:
+            return False
+
 
 
 ###############################################################################
